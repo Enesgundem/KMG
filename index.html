@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="KMG Menuiserie — Artisan menuisier spécialisé dans les cuisines sur mesure, escaliers, portes et dressings en bois noble. Savoir-faire artisanal depuis plus de 15 ans.">
+  <meta name="keywords"
+    content="menuiserie, bois, artisan, sur mesure, cuisine, escalier, porte, dressing, ébénisterie">
+  <title>KMG Menuiserie</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪵</text></svg>">
+</head>
+
+<body>
+
+  <!-- ============================================
+       HEADER
+       ============================================ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <!-- Logo du site -->
+      <a href="#" class="header__logo">
+        <span class="header__logo-text">KMG<span> Menuiserie</span></span>
+      </a>
+
+      <!-- Menu de navigation principal -->
+      <nav class="header__nav" id="nav">
+        <a href="#accueil" class="header__nav-link">Accueil</a>
+        <a href="#services" class="header__nav-link">Services</a>
+        <a href="#apropos" class="header__nav-link">À Propos</a>
+        <a href="#realisations" class="header__nav-link">Réalisations</a>
+        <a href="#processus" class="header__nav-link">Processus</a>
+        <a href="#avis" class="header__nav-link">Avis</a>
+
+        <!-- Bouton de contact -->
+        <a href="#contact" class="btn-primary header__cta">
+          <span>Devis Gratuit</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </a>
+      </nav>
+
+      <button class="header__menu-toggle" id="menu-toggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============================================
+       HERO
+       ============================================ -->
+  <section class="hero" id="accueil">
+    <div class="hero__bg">
+      <img src="assets/images/hero.png" alt="Atelier de menuiserie KMG" loading="eager">
+    </div>
+
+    <div class="container hero__content">
+      <div class="hero__badge">
+        <span class="hero__badge-dot"></span>
+        Artisan Menuisier Depuis 2009
+      </div>
+
+      <h1 class="hero__title">
+        L'Art du Bois,<br>
+        <em>Sublimé</em> par le<br>
+        Savoir-Faire
+      </h1>
+
+      <p class="hero__description">
+        Menuiserie artisanale sur mesure. Nous créons des espaces uniques
+        qui allient l'élégance du bois noble à la perfection du détail.
+      </p>
+
+      <!-- Boutons d'action : Devis et Réalisations -->
+      <div class="hero__actions">
+        <a href="#contact" class="btn-primary">
+          <span>Demander un Devis</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </a>
+        <a href="#realisations" class="btn-secondary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+            <circle cx="8.5" cy="8.5" r="1.5" />
+            <polyline points="21 15 16 10 5 21" />
+          </svg>
+          Nos Réalisations
+        </a>
+      </div>
+
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <div class="hero__stat-number" id="stat-years">15+</div>
+          <div class="hero__stat-label">Années d'Expérience</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-number" id="stat-projects">500+</div>
+          <div class="hero__stat-label">Projets Réalisés</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-number" id="stat-satisfaction">98%</div>
+          <div class="hero__stat-label">Clients Satisfaits</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll-indicator">
+      <span>Défiler</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Divider: Hero → Services -->
+  <div class="section-divider section-divider--wave" style="background: var(--color-bg-secondary);">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" fill="var(--color-bg-secondary)">
+      <path d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,50 1440,45 L1440,80 L0,80 Z" opacity="0.5" />
+      <path d="M0,50 C300,20 600,70 900,40 C1200,10 1350,50 1440,35 L1440,80 L0,80 Z" />
+    </svg>
+  </div>
+
+  <!-- ============================================
+       SERVICES
+       ============================================ -->
+  <section class="services section-padding" id="services">
+    <div class="container">
+      <div class="section-header text-center animate-blur">
+        <div class="section-label">Ce Que Nous Faisons</div>
+        <h2 class="section-title">Nos Expertises en<br>Menuiserie</h2>
+        <p class="section-subtitle section-subtitle--center">
+          Un savoir-faire artisanal au service de vos projets les plus ambitieux,
+          du sur-mesure pour chaque espace de vie.
+        </p>
+      </div>
+
+      <div class="services__grid">
+        <!-- Service 1: Cuisines Sur Mesure -->
+        <div class="service-card animate-scale stagger-1">
+          <div class="service-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2" />
+              <path d="M7 2v20" />
+              <path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7" />
+            </svg>
+          </div>
+          <h3 class="service-card__title">Cuisines Sur Mesure</h3>
+          <p class="service-card__description">
+            Conception et réalisation de cuisines en bois massif, alliant fonctionnalité moderne
+            et charme authentique du bois noble.
+          </p>
+        </div>
+
+        <!-- Service 2: Escaliers -->
+        <div class="service-card animate-scale stagger-2">
+          <div class="service-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="2 17 2 12 7 12 7 7 12 7 12 2 17 2 17 7 22 7" />
+            </svg>
+          </div>
+          <h3 class="service-card__title">Escaliers</h3>
+          <p class="service-card__description">
+            Escaliers droits, tournants ou hélicoïdaux, chaque marche est sculptée
+            avec précision pour un rendu exceptionnel.
+          </p>
+        </div>
+
+        <!-- Service 3: Portes & Fenêtres -->
+        <div class="service-card animate-scale stagger-3">
+          <div class="service-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z" />
+              <path d="M15 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" />
+            </svg>
+          </div>
+          <h3 class="service-card__title">Portes & Fenêtres</h3>
+          <p class="service-card__description">
+            Menuiseries intérieures et extérieures, portes d'entrée, fenêtres bois
+            sur mesure pour une isolation et un style incomparables.
+          </p>
+        </div>
+
+        <!-- Service 4: Dressings & Rangements -->
+        <div class="service-card animate-scale stagger-4">
+          <div class="service-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="18" rx="2" />
+              <path d="M2 9h20" />
+              <path d="M12 3v18" />
+            </svg>
+          </div>
+          <h3 class="service-card__title">Dressings & Rangements</h3>
+          <p class="service-card__description">
+            Aménagements sur mesure qui optimisent chaque centimètre de votre espace
+            tout en apportant une touche d'élégance naturelle.
+          </p>
+        </div>
+
+        <!-- Service 5: Terrasses & Pergolas -->
+        <div class="service-card animate-scale stagger-5">
+          <div class="service-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 22L12 2l10 20H2z" />
+              <path d="M12 2v20" />
+              <path d="M5.5 15h13" />
+            </svg>
+          </div>
+          <h3 class="service-card__title">Terrasses & Pergolas</h3>
+          <p class="service-card__description">
+            Extensions extérieures en bois traité, terrasses et pergolas
+            qui subliment votre jardin et créent de nouveaux espaces de vie.
+          </p>
+        </div>
+
+        <!-- Service 6: Rénovation Bois -->
+        <div class="service-card animate-scale stagger-6">
+          <div class="service-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+            </svg>
+          </div>
+          <h3 class="service-card__title">Rénovation Bois</h3>
+          <p class="service-card__description">
+            Restauration et rénovation de menuiseries anciennes,
+            redonnant vie au patrimoine bois de votre habitation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider: Services → About -->
+  <div class="section-divider--grain animate-on-scroll"></div>
+
+  <!-- ============================================
+       ABOUT
+       ============================================ -->
+  <section class="about section-padding" id="apropos">
+    <div class="container about__inner">
+      <div class="about__image-wrapper animate-slide-left">
+        <div class="about__image">
+          <img src="assets/images/craftsman.png" alt="Artisan menuisier au travail" loading="lazy">
+        </div>
+        <div class="about__image-accent">
+          <div class="about__image-accent-number">15+</div>
+          <div class="about__image-accent-text">Ans d'Expertise</div>
+        </div>
+      </div>
+
+      <div class="about__content animate-slide-right">
+        <div class="section-header">
+          <div class="section-label">Notre Histoire</div>
+          <h2 class="section-title">La Passion du Bois,<br>Transmise de Génération<br>en Génération</h2>
+          <p class="section-subtitle">
+            Depuis 2009, KMG Menuiserie perpétue l'art de la menuiserie artisanale.
+            Chaque projet est une œuvre unique, pensée et réalisée avec un souci du
+            détail incomparable.
+          </p>
+        </div>
+
+        <div class="about__features">
+          <div class="about__feature">
+            <div class="about__feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <div>
+              <div class="about__feature-title">Bois Nobles Sélectionnés</div>
+              <p class="about__feature-desc">
+                Chêne, noyer, frêne, merisier — nous sélectionnons les plus belles
+                essences pour vos réalisations.
+              </p>
+            </div>
+          </div>
+
+          <div class="about__feature">
+            <div class="about__feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+            </div>
+            <div>
+              <div class="about__feature-title">Respect des Délais</div>
+              <p class="about__feature-desc">
+                Une planification rigoureuse pour livrer vos projets dans les temps,
+                sans compromis sur la qualité.
+              </p>
+            </div>
+          </div>
+
+          <div class="about__feature">
+            <div class="about__feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+            </div>
+            <div>
+              <div class="about__feature-title">Accompagnement Personnalisé</div>
+              <p class="about__feature-desc">
+                De la conception à la pose, un interlocuteur unique vous
+                accompagne tout au long de votre projet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider: About → Projects -->
+  <div class="section-divider section-divider--wave" style="background: var(--color-bg-dark);">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" fill="var(--color-bg-dark)">
+      <path d="M0,30 C240,70 480,10 720,50 C960,90 1200,20 1440,60 L1440,80 L0,80 Z" opacity="0.5" />
+      <path d="M0,50 C360,10 720,70 1080,30 C1260,15 1380,40 1440,25 L1440,80 L0,80 Z" />
+    </svg>
+  </div>
+
+  <!-- ============================================
+       PROJECTS / RÉALISATIONS
+       ============================================ -->
+  <section class="projects section-padding" id="realisations">
+    <div class="container">
+      <div class="section-header text-center animate-flip">
+        <div class="section-label">Nos Réalisations</div>
+        <h2 class="section-title section-title--light">Nos Plus Belles<br>Réalisations</h2>
+        <p class="section-subtitle section-subtitle--center">
+          Découvrez une sélection de nos projets récents,
+          témoins de notre savoir-faire et de notre exigence.
+        </p>
+      </div>
+
+      <div class="projects__grid">
+        <!-- Réalisation: Cuisine -->
+        <div class="project-card animate-slide-left stagger-1">
+          <img class="project-card__image" src="assets/images/kitchen.png" alt="Cuisine sur mesure en chêne"
+            loading="lazy">
+          <div class="project-card__overlay">
+            <span class="project-card__category">Cuisine</span>
+            <h3 class="project-card__title">Cuisine en Chêne Massif</h3>
+            <p class="project-card__description">
+              Cuisine complète en chêne clair avec plan de travail intégré
+              et finitions haut de gamme.
+            </p>
+          </div>
+          <div class="project-card__arrow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7" />
+              <polyline points="7 7 17 7 17 17" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Réalisation: Escalier -->
+        <div class="project-card animate-slide-right stagger-2">
+          <img class="project-card__image" src="assets/images/staircase.png" alt="Escalier hélicoïdal en noyer"
+            loading="lazy">
+          <div class="project-card__overlay">
+            <span class="project-card__category">Escalier</span>
+            <h3 class="project-card__title">Escalier en Noyer</h3>
+            <p class="project-card__description">
+              Escalier hélicoïdal sculptéà la main avec garde-corps design.
+            </p>
+          </div>
+          <div class="project-card__arrow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7" />
+              <polyline points="7 7 17 7 17 17" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Réalisation: Porte -->
+        <div class="project-card animate-slide-right stagger-3">
+          <img class="project-card__image" src="assets/images/door.png" alt="Porte d'entrée en bois massif"
+            loading="lazy">
+          <div class="project-card__overlay">
+            <span class="project-card__category">Porte</span>
+            <h3 class="project-card__title">Porte d'Entrée Premium</h3>
+            <p class="project-card__description">
+              Porte d'entrée en bois massif avec motifs sculptés et serrure haute sécurité.
+            </p>
+          </div>
+          <div class="project-card__arrow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7" />
+              <polyline points="7 7 17 7 17 17" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider: Projects → Process -->
+  <div class="section-divider section-divider--wave" style="background: var(--color-bg-primary);">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" fill="var(--color-bg-primary)">
+      <path d="M0,60 C480,10 960,70 1440,30 L1440,80 L0,80 Z" opacity="0.5" />
+      <path d="M0,40 C240,80 720,0 1200,60 C1380,70 1440,55 1440,50 L1440,80 L0,80 Z" />
+    </svg>
+  </div>
+
+  <!-- ============================================
+       PROCESSUS
+       ============================================ -->
+  <section class="process section-padding" id="processus">
+    <div class="container">
+      <div class="section-header text-center animate-blur">
+        <div class="section-label">Comment Ça Marche</div>
+        <h2 class="section-title">Notre Processus<br>de Création</h2>
+        <p class="section-subtitle section-subtitle--center">
+          Un accompagnement complet, de la première idée à la réalisation finale.
+        </p>
+      </div>
+
+      <div class="process__timeline">
+        <!-- Étape 1 -->
+        <div class="process-step animate-rotate stagger-1">
+          <div class="process-step__number">01</div>
+          <h3 class="process-step__title">Écoute et Conseil</h3>
+          <p class="process-step__desc">
+            Nous écoutons vos envies, analysons votre espace et vous conseillons
+            les meilleures solutions.
+          </p>
+        </div>
+
+        <!-- Étape 2 -->
+        <div class="process-step animate-rotate stagger-2">
+          <div class="process-step__number">02</div>
+          <h3 class="process-step__title">Conception</h3>
+          <p class="process-step__desc">
+            Plans détaillés pour valider ensemble
+            chaque aspect de votre projet.
+          </p>
+        </div>
+
+        <!-- Étape 3 -->
+        <div class="process-step animate-rotate stagger-3">
+          <div class="process-step__number">03</div>
+          <h3 class="process-step__title">Fabrication</h3>
+          <p class="process-step__desc">
+            Réalisation dans notre atelier avec des bois sélectionnés
+            et un travail artisanal minutieux.
+          </p>
+        </div>
+
+        <!-- Étape 4 -->
+        <div class="process-step animate-rotate stagger-4">
+          <div class="process-step__number">04</div>
+          <h3 class="process-step__title">Installation</h3>
+          <p class="process-step__desc">
+            Pose soignée par nos équipes et nettoyage du chantier.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider: Process → Testimonials -->
+  <div class="section-divider--grain animate-on-scroll"></div>
+
+  <!-- ============================================
+       TESTIMONIALS
+       ============================================ -->
+  <section class="testimonials section-padding" id="avis">
+    <div class="container">
+      <div class="section-header text-center animate-flip">
+        <div class="section-label">Témoignages</div>
+        <h2 class="section-title">Ce Que Disent<br>Nos Clients</h2>
+        <p class="section-subtitle section-subtitle--center">
+          La satisfaction de nos clients est notre plus belle récompense.
+          Découvrez leurs témoignages.
+        </p>
+      </div>
+
+      <div class="testimonials__grid">
+        <!-- Témoignage 1 -->
+        <div class="testimonial-card animate-scale stagger-1">
+          <div class="testimonial-card__quote-icon">"</div>
+          <div class="testimonial-card__stars">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+          </div>
+          <p class="testimonial-card__text">
+            "Un travail remarquable pour notre cuisine sur mesure. L'équipe KMG a su
+            comprendre nos besoins et livrer un résultat qui dépasse nos attentes.
+            La qualité du bois et des finitions est exceptionnelle."
+          </p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">ML</div>
+            <div>
+              <div class="testimonial-card__author-name">Marie Lefèvre</div>
+              <div class="testimonial-card__author-role">Propriétaire — Lyon</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Témoignage 2 -->
+        <div class="testimonial-card animate-scale stagger-2">
+          <div class="testimonial-card__quote-icon">"</div>
+          <div class="testimonial-card__stars">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+          </div>
+          <p class="testimonial-card__text">
+            "Notre escalier en noyer est une véritable œuvre d'art. Chaque détail
+            a été pensé avec soin. L'accompagnement du début à la fin a été
+            professionnel et chaleureux. Je recommande à 100%."
+          </p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">PD</div>
+            <div>
+              <div class="testimonial-card__author-name">Pierre Dupont</div>
+              <div class="testimonial-card__author-role">Architecte — Paris</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Témoignage 3 -->
+        <div class="testimonial-card animate-scale stagger-3">
+          <div class="testimonial-card__quote-icon">"</div>
+          <div class="testimonial-card__stars">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+          </div>
+          <p class="testimonial-card__text">
+            "Nous avons fait appel à KMG pour la rénovation complète de nos
+            menuiseries. Résultat impeccable, dans les délais et avec un budget
+            maîtrisé. Un vrai plaisir de travailler avec cette équipe."
+          </p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">SB</div>
+            <div>
+              <div class="testimonial-card__author-name">Sophie Bernard</div>
+              <div class="testimonial-card__author-role">Décoratrice — Bordeaux</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider: Testimonials → CTA -->
+  <div class="section-divider section-divider--wave" style="background: var(--color-bg-dark);">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" fill="var(--color-bg-dark)">
+      <path d="M0,20 C360,70 720,10 1080,50 C1260,65 1380,40 1440,45 L1440,80 L0,80 Z" opacity="0.5" />
+      <path d="M0,45 C480,80 960,15 1440,55 L1440,80 L0,80 Z" />
+    </svg>
+  </div>
+
+  <!-- ============================================
+       CTA / CONTACT
+       ============================================ -->
+  <section class="cta section-padding" id="contact">
+    <div class="container">
+      <div class="cta__inner animate-blur">
+        <h2 class="cta__title">
+          Donnez Vie à Vos<br>
+          <em>Projets en Bois</em>
+        </h2>
+        <p class="cta__description">
+          Contactez-nous pour un devis gratuit et sans engagement.
+          Nos artisans se déplacent chez vous pour comprendre votre projet
+          et vous proposer la meilleure solution.
+        </p>
+
+        <div class="cta__actions">
+          <!-- Bouton Appel -->
+          <a href="tel:+33600000000" class="btn-primary">
+            <span>Appeler Maintenant</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+          </a>
+          <!-- Bouton Email -->
+          <a href="mailto:contact@kmg-menuiserie.fr" class="btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            Envoyer un Email
+          </a>
+        </div>
+
+        <div class="cta__contact-info">
+          <div class="cta__contact-item">
+            <div class="cta__contact-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <span>9 rue des freres lumieres, 95280 Jouy le moutier</span>
+          </div>
+          <div class="cta__contact-item">
+            <div class="cta__contact-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+            </div>
+            <span>Lun — Ven : 8h — 18h</span>
+          </div>
+          <div class="cta__contact-item">
+            <div class="cta__contact-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72" />
+              </svg>
+            </div>
+            <span>06 68 51 58 19</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="#" class="header__logo">
+            <div class="header__logo-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <polyline points="9,22 9,12 15,12 15,22" />
+              </svg>
+            </div>
+            <span class="header__logo-text">KMG<span> Menuiserie</span></span>
+          </a>
+          <p class="footer__brand-desc">
+            Artisan menuisier passionné, nous donnons vie à vos projets
+            en bois avec un savoir-faire d'exception depuis plus de 15 ans.
+          </p>
+          <div class="footer__socials">
+            <!-- Liens Réseaux Sociaux -->
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Services</h4>
+          <a href="#services" class="footer__link">Cuisines Sur Mesure</a>
+          <a href="#services" class="footer__link">Escaliers</a>
+          <a href="#services" class="footer__link">Portes & Fenêtres</a>
+          <a href="#services" class="footer__link">Dressings</a>
+          <a href="#services" class="footer__link">Terrasses</a>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Entreprise</h4>
+          <a href="#apropos" class="footer__link">À Propos</a>
+          <a href="#realisations" class="footer__link">Réalisations</a>
+          <a href="#processus" class="footer__link">Notre Processus</a>
+          <a href="#avis" class="footer__link">Témoignages</a>
+          <a href="#contact" class="footer__link">Contact</a>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contact</h4>
+          <a href="tel:+33600000000" class="footer__link">06 68 51 58 19</a>
+          <a href="mailto:contact@kmg-menuiserie.fr" class="footer__link">sarl.kmg@hotmail.fr</a>
+          <span class="footer__link">9 rue des freres lumieres</span>
+          <span class="footer__link">95280 Jouy le moutier, France</span>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          © 2026 KMG Menuiserie. Tous droits réservés.
+        </p>
+        <div class="footer__legal-links">
+          <a href="#" class="footer__legal-link">Mentions Légales</a>
+          <a href="#" class="footer__legal-link">Politique de Confidentialité</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
