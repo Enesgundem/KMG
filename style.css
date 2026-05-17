@@ -1418,6 +1418,7 @@ button {
   gap: var(--space-md);
   color: rgba(255, 255, 255, 0.6);
   font-size: var(--fs-sm);
+  white-space: nowrap;
 }
 
 .cta__contact-icon {
