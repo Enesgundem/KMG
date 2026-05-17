@@ -1622,6 +1622,14 @@ button {
     gap: var(--space-lg);
   }
 
+  .cta__contact-item {
+    white-space: normal;
+  }
+
+  .cta__contact-item:last-child {
+    white-space: nowrap;
+  }
+
   .footer__inner {
     grid-template-columns: 1fr;
     gap: var(--space-2xl);
